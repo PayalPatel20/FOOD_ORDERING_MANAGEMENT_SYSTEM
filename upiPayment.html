@@ -1,0 +1,143 @@
+<!-- 
+
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {
+			background-image: url("payment option background.jpg");
+			background-size: cover;
+			background-position: center;
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		.upi-form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+			padding: 20px;
+			background-color: rgba(255, 255, 255, 0.5);
+			border-radius: 10px;
+		}
+		input[type=text], input[type=password] {
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			margin-bottom: 10px;
+			width: 100%;
+			box-sizing: border-box;
+		}
+		button {
+			padding: 10px 20px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 18px;
+			transition: background-color 0.3s ease;
+		}
+		button:hover {
+			background-color: #3E8E41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="upi-form">
+			<label for="upi-id">UPI ID:</label>
+			<input type="text" id="upi-id" name="upi-id" placeholder="Enter your UPI ID">
+			<label for="amount">Amount:</label>
+			<input type="text" id="amount" name="amount" placeholder="Enter the amount">
+			<button onclick="submitForm()">Submit</button>
+		</div>
+	</div>
+	<script>
+		function submitForm() {
+			let upiId = document.getElementById("upi-id").value;
+			let amount = document.getElementById("amount").value;
+			if (upiId.trim() === "") {
+				alert("Please enter your UPI ID");
+				return;
+			}
+			if (isNaN(amount) || amount <= 0) {
+				alert("Please enter a valid amount");
+				return;
+			}
+			alert("UPI payment of Rs. " + amount + " has been sent to " + upiId);
+			window.location.href = "thankyou.html";
+		}
+	</script>
+</body>
+</html>
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {
+			background-image: url("payment option background.jpg");
+			background-size: cover;
+			background-position: center;
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		.upi-form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+			padding: 20px;
+			background-color: rgba(255, 255, 255, 0.5);
+			border-radius: 10px;
+		}
+		input[type=text], input[type=password] {
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			margin-bottom: 10px;
+			width: 100%;
+			box-sizing: border-box;
+		}
+		button {
+			padding: 10px 20px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 18px;
+			transition: background-color 0.3s ease;
+		}
+		button:hover {
+			background-color: #3E8E41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="upi-form">
+			<label for="upi-id">UPI ID:</label>
+			<input type="text" id="upi-id" name="upi-id" placeholder="Enter your UPI ID">
+			<label for="password">Password:</label>
+				<input type="password" id="password" name="password" placeholder="Enter your password">
+			<button id="submit-button" disabled>Submit</button>
+		</div>
+	</div>
+
+	
+	</script>
+</body>
+</html>
